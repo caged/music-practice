@@ -11,6 +11,7 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
+    baseUrl: '/music-practice'
     /* ... */
   },
   mount: {
