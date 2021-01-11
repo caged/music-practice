@@ -4,14 +4,14 @@ import { select, selectAll } from 'd3'
 const boards = document.querySelectorAll('.fb')
 const style = {
   filter: ({ inBox }) => inBox,
-  text: ({ note, interval }) => note,
+  text: ({ note, interval }) => interval,
   fill: ({ note, interval }) => {
     let color = '#000'
     if (interval === '1P') color = '#FE54C1'
     if (interval.match(/3/)) color = '#555'
     return color
   },
-  fontSize: 10
+  fontSize: 8
 }
 for (const el of boards) {
   const { root, scale, box } = el.dataset
@@ -19,7 +19,14 @@ for (const el of boards) {
     el,
     dotStrokeWidth: 0,
     fretCount: box ? 15 : 24,
-    dotSize: box ? 20 : 18
+    dotSize: box ? 20 : 18,
+    middleFretColor: '#333',
+    scaleFrets: false,
+    stringColor: '#aaa',
+    fretColor: '#aaa',
+    nutColor: '#333',
+    fretNumbersMargin: 5,
+    fretNumbersHeight: 10
     // tuning: GUITAR_TUNINGS.dropD
   })
 
