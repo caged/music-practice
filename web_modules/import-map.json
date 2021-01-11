@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@moonwave99/fretboard.js": "./@moonwave99/fretboardjs.js",
+    "d3": "./d3.js"
+  }
+}
