@@ -26,5 +26,8 @@ module.exports = {
     //   minify: true,
     //   target: 'es2018',
     // },
+    // routes: [
+    //   // { src: '/music-practice/*', dest: "/1/index.html" }
+    // ]
   },
 }
