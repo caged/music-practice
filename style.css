@@ -32,6 +32,10 @@ h1 {
   flex-grow: 1;
 }
 
+h2 {
+  margin-left: 20px;
+}
+
 ul li {
   font-size: 2rem;
   padding: 5px;
